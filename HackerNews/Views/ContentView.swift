@@ -17,7 +17,7 @@ struct ContentView: View {
         NavigationView {
             List(networkManager.posts) { post in
                 
-                NavigationLink(destination: DetailView(url: post.url )) {
+                NavigationLink(destination: DetailWebsiteView(url: post.url )) {
                         HStack {
                             Text(String(post.points))
                             Text(post.title)
@@ -26,7 +26,7 @@ struct ContentView: View {
                 
                 
             }
-            .navigationTitle("H4X0R News")
+            .navigationTitle("Hacker News")
             
         }
         .navigationViewStyle(StackNavigationViewStyle())

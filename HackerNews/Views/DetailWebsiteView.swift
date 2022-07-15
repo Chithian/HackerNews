@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-struct DetailView: View {
+struct DetailWebsiteView: View {
     
     let url: String?
     
@@ -19,7 +19,7 @@ struct DetailView: View {
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView(url: "https://www.google.com")
+        DetailWebsiteView(url: "https://www.google.com")
     }
 }
 
